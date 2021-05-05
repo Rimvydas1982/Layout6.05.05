@@ -1,7 +1,10 @@
 *{box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-.main{margin: 0 auto;}
-.head{padding: 10px;
+.main{margin: 0 auto;
+position: fixed;}
+.head{
+ height: 50px;   
+padding: 10px;
 background-color: aliceblue;
 position: fixed;
 width: 100%;
@@ -11,3 +14,76 @@ justify-content: space-between;
 .name{display: flex;} 
 .fa-universal-access{font-size: xx-large;}
 .navi{} 
+
+.main1{position: relative;
+    width: 100%;
+height: 800px;
+z-index: 0;}
+
+.logo--item1{z-index: -1;
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: blueviolet;
+grid-area: violet;}
+.logo--item2{z-index: -1;
+background-color: cyan;
+grid-area: cyan;}
+.logo--item3{z-index: -1;
+background-color: blueviolet;
+grid-area: violetbig ;}
+.logo--item4
+{
+padding-top: 50px;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.534);
+grid-area: black;}
+
+
+.logo{width: 100%;
+height: 1500px;
+grid-template-rows: 1fr 1fr 4fr 1fr;
+display: grid;
+grid-template-areas: 
+"violet"
+"cyan"
+"violetbig"
+"black"
+;}
+
+.main2
+{left: 10vh;
+    right: 10vh;
+    top: 150px;
+    position: absolute;
+    z-index: 1000;
+    height: 1100px;
+width: 80%;
+background-color: brown;}
+
+.grid{height: 1100px;
+width: 100%;
+display: grid;
+grid-template-areas:
+"one"
+"two" 
+"three"
+"four"
+"five";}
+
+.grid-item1{background-image: url(https://percentotech.com/wp-content/uploads/2015/08/Server-room-interior-in-datacenter-482872096_1226x858.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+grid-area: one;}
+.grid-item2{background-color: rgb(255, 0, 242);
+grid-area: two;}
+.grid-item3{background-image: url(https://e-file.huawei.com/-/media/hic/products/taishan/taishan-2480/2480-banner-wap-v4.jpg);   
+background-repeat: no-repeat;
+background-size: cover;
+grid-area: three;}
+.grid-item4{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6sRhYxEV3w4cFz3BWYia7g-nZ5nPTmx96HQ&usqp=CAU);
+background-repeat: no-repeat;
+background-size: cover;
+grid-area: four;}
+.grid-item5{background-color: rgba(0, 255, 42, 0.363);
+grid-area: five;}
