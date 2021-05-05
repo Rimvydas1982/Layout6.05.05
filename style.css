@@ -4,6 +4,7 @@
 /* position: fixed; */
 }
 .head{
+z-index: 2000;
  height: 50px;   
 padding: 10px;
 background-color: aliceblue;

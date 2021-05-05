@@ -29,15 +29,15 @@ grid-template-areas:
 
 .logo--item1{
 display: flex;
-align-items: flex-start;
+align-items: center;
 }
 
-.logo--item1 h2 {margin-top: none}
+.logo--item1 h2 {margin-top: none;}
 .main2
 {
 left: 10px;
 right: 10px;
-top: 90px;
+top: 150px;
 position: absolute;
 z-index: 1000;
 height: 600px;
