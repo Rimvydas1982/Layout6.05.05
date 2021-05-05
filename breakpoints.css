@@ -1,1 +1,64 @@
 @media screen and (min-width: 768px){
+
+/* .main2{width: 90%;} */
+
+    .grid{
+height: 1100px;
+width: 100%;
+grid-template-rows: 2fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: 
+"one one"
+"two three"
+"four five"
+;}
+}
+
+@media screen and (min-width: 991px){
+
+    .logo{width: 100%;
+        height: 1500px;
+        grid-template-rows: 200px 200px 300px 300px;
+        display: grid;
+        grid-template-areas: 
+        "violet"
+        "cyan"
+        "violetbig"
+        "black"
+        ;}
+
+.logo--item1{
+display: flex;
+align-items: flex-start;
+}
+
+.logo--item1 h2 {margin-top: none}
+.main2
+{
+left: 10px;
+right: 10px;
+top: 90px;
+position: absolute;
+z-index: 1000;
+height: 600px;
+width: 95%;
+/* background-color: brown; */
+}
+    
+.grid{
+height: 1000px;
+width: 100%;
+grid-template-rows: 300px 300px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-areas: 
+"one one two three"
+"one one four five";
+}
+
+
+}
+
+@media screen and (min-width: 1200px){
+
+ 
+}
